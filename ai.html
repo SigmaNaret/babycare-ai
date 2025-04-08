@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script>
+    let model;
+    async function loadModel() {
+      model = await tf.loadLayersModel("https://teachablemachine.withgoogle.com/models/z5XJUQkzx/");
+      console.log("Model loaded!");
+    }
+    loadModel();
+  </script>
+</head>
+<body></body>
+</html>
